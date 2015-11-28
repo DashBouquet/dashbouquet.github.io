@@ -3,7 +3,6 @@
 Разработка ведется на Mac OS X в среде xCode. Целевая мобильная платформа iOS. 
 Разработка для текущей главной версии iOS с последующим переходом на следующую версию за месяц до ее официального выхода. 
 
-
 ### Языки программирования
 
 Текущий: Objective-C  
@@ -11,24 +10,21 @@
 
 ### Библиотеки
 
-* non-realtime
-  * Поставляемые компанией Apple для iOS платформы;
-  * AFNetworking
-  * Parse
-  * Testfairy
-  * Branch.io
-  * Facebook Utils
-  * Crashlytics
-  * Fabric
-  * FMDB
-* realtime
-  * неизвестно
+Всегда используются библиотеки, поставляемые компанией Apple для iOS платформы.  
+AFNetworking используется над стандартной сетевой подсистемой.  
+Если серверная часть parse.com, то используются библиотеки, предоставляемые parse.com.  
+Для сбора информации об аварийном завершении приложения или неисправностях используются Crashlytics, Testfairy, Fabric. В будущем возможен переход на TestFlight.  
+При работе с Facebook используется Facebook Utils. Так же Facebook используется для сбора статистики об использовании приложения пользователем.  
+Для отслеживания установок используется Branch.io.  
+Для доступа к sql базам используется FMDB.  
 
 ### Тестирование
-* XCTest
-* Appium
+* XCTest используется для тестирования внутренней логики
+* Appium для тестирования пользовательского интерфейса 
+
+### CI и автоматическая сборка приложения
+В качестве continuous integration сервиса используется [CircleCI](https://circleci.com/). Для автоматической сборки приложения в текущий момент используется набор утилит от [nomad](https://github.com/nomad). В будущем планируется перейти на [Fastlane](https://fastlane.tools/).
 
 ### Стиль кода
 
 * [Apple](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210-CH1-SW1)
-* [Google](https://google.github.io/styleguide/objcguide.xml#Spacing_And_Formatting)
