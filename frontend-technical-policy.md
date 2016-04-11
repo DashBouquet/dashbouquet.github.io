@@ -1,13 +1,16 @@
 # Frontend  technical guidelines
 
 Key languages and technologies:
-* Javascript1.5 => ES6
+* Javascript ES6
 * SASS 
 * HTML5
-* Gulp => WebPack
+* WebPack
 * CircleCI
 * Git
 * BabelJS
+* React or A2 as a primary framework
+* OpenUI5 for SAP-related projects
+* Loopback/express for backend
 
 It's allowed to use other languages on support projects.
 
@@ -16,28 +19,25 @@ It's allowed to use other languages on support projects.
 ## Frameworks
 
 We support following frameworks:
-* AngularJS 
-* ReactJS
-* Meteor (+ Angular or React)
+* AngularJS 2
+* ReactJS 
+* Loopback/strongloop
 
 ### AngularJS
 
 Use following guidelines to build perfect apps:
 * ToddMotto https://github.com/toddmotto/angularjs-styleguide
 
-For new apps it's preferred to use:
-* BabelJS as ES6 transpiler
-* NG-Forward as pre-Angular2 syntax sugar
-
-Angular-Material is preferred framework for building modern UI. AngularStrap is also acceptable.
+Angular-Material is preferred framework for building modern UI. Bootstrap 4 is also acceptable.
 
 ### ReactJS
 
-WIP
+* Use Immutable + Redux if possible
 
-### Meteor
+### Loopback
 
-For new apps it's preferred to create meteor-backed apps which require realtime communications & web + mobile approach.
+* Use loopback as a preferred backend framework
+* Put most of the functionality into a separable components for later reuse
 
 ### 
 
