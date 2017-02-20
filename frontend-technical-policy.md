@@ -12,6 +12,14 @@
 
 
 
+## Minimal project setup
+
+Every project *MUST* have following:
+1. Readme file with project setup & build instructions
+2. Automatic build on every push (use CircleCI as a default solution)
+3. Automatic deployment on every push ( use CircleCI && Docker && ( Docker Cloud || Heroku ) ) as default solution
+
+
 Key languages and technologies:
 * Javascript ES6
 * SASS 
