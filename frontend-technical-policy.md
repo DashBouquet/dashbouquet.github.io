@@ -1,5 +1,17 @@
 # Frontend  technical guidelines
 
+1. Git commit message guidelines
+2. Git flow guidelines
+3. Minimal project documentation checklist
+4. Minimal project setup
+5. Configuration management
+6. React Codebook Guidelines
+7. Unit Testing Guideline
+8. Code Style guideline (javascript, typescript)
+9. Technical Policy -- Libraries, Approaches
+
+
+
 Key languages and technologies:
 * Javascript ES6
 * SASS 
