@@ -19,11 +19,12 @@ CHORE: removed bogus console.log statements
 * Don't leave out commented code or `console.log` statements
 
 
-###Branches
+### Branches
 * We use **master** only to deliver stable builds. You are not allowed to push to it directly. Now branch `master` is a current state of application on stage
+* We use **dev** as a current development branch
 * While developing a feature you should create **feature/feature-name**
-* For each task/fix/feature should be created separate branch
-* After finishing of feature `pull request` should be created
+* For each task/fix/feature should be created separate branch. You may concat several tasks into a bigger feature. Name branches properly.
+* After finishing of feature `pull request` should be created. Ask for [Code review](code_review.md) if you want to.
 * Notify lead developer or team lead to put a code review on it
 * After code review feature branch should be merged to `master`
 * On `master` updating CI service starting deployment to stage 
