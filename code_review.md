@@ -14,6 +14,7 @@ So it's a good idea to implement it in any project, with small differences.
 Prerequesites:
 1. The newly created team is informed that code review flow is being implemented in a specific project.
 2. Every team member can stick to `git workflow`
+3. Everybody should understand that reviewer's feedback isn't a ground truth
 
 Here are few simple steps:
 1. After submitting a PR a team member `may` ask `any` team member to review his PR in order to get a feedback
