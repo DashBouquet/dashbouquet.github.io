@@ -149,6 +149,18 @@ Moment is a date-operations library. It's replaced with `date-fns`
 
 ## React
 
+### Books
+
 - [Learning React. O'Reilly](https://drive.google.com/file/d/129d5xERO0heJ7eSqUCkIXHse1_Y572qW/view?usp=sharing)
 
 **NOTE:** *The sources are presented for informational purposes only.*
+
+### Tutorials And Articles
+
+- [React as a UI Runtime](https://overreacted.io/react-as-a-ui-runtime/)
+- [A Complete Guide to useEffect](https://overreacted.io/a-complete-guide-to-useeffect/)
+- [How Are Function Components Different from Classes?](https://overreacted.io/how-are-function-components-different-from-classes/)
+- [How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
+
+
+
