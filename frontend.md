@@ -13,10 +13,13 @@ Basic stack:
 
  - Use `modules` approach rather than component/container
  - Keep all your components a pure functions
- - Keep event handlers away from components using `recompose`
- - Keep dispatch function handlers away from components using `recompose` 
-   and `mapDispatchToProps`
+ - Keep components small and function-specific
+ - No `recompose`, only recent React with hooks
+ - Reusability is important, so keep creation of new components to the minimum required
+ - Consolidate duplicate code – DRY your code
+ - Put CSS in JavaScript (use `emotion`or `styled-components`)
  - Keep your components props structure typed with interfaces
+ - Comment only where necessary
  - Move business logic to a separate folder named `businessLogic`. 100% of
    code in that folder should be covered with unit tests
 
@@ -120,75 +123,9 @@ otherwise it should come to saga.
 
 # Other Recommendations
 
-## Ramda
-
-**Ramda** is a functional-style library we're using to build awesome software. It 
-comes as a replacement to well-known *LoDash* which is considered to be deprecated
-since 2017
-
-### Migration from LoDash
-
-#### Selectors
-
-Using lenses abstration over getters abstraction allows us to 
-
-1. Compose lenses (for both get and set)
-1. Create functional immutable setters 
-
-#### Simple Value
-
-Lodash:
-```javascript
-_.get(state, 'users');
-```
-
-Ramda:
-```javascript
-view(lensProp('users'), state);
-```
-
-#### Deep Value
-
-Lodash:
-```javascript
-_.get(state, 'users.name');
-```
-
-Ramda:
-```javascript
-view(lensPath(['users','name']), state);
-```
-
-#### Default Value
-
-Lodash:
-```javascript
-_.get(state, 'username', 'anonymous');
-```
-
-Ramda:
-```javascript
-const userNameLens = lens(propOr('username', 'anonymous'), assoc('username'));
-view(userNameLens, state);
-```
-
-#### Setting a value (immutable way)
-
-Lodash:
-```javascript
-const newstate = _.assign({}, state, _.set('username.name', 'newName'));
-```
-
-Ramda:
-```javascript
-const userNameLens = lensPath(['username','name']);
-const newstate = set(userNameLens, 'newName', state);
-```
-
 ## redux-saga-testing
 
 Use `redux-saga-testing` package to get your saga tested
-
 
 ## jest 
 
@@ -200,10 +137,9 @@ Use jest to run your unit tests.
 
 # Not recommended 
 
-## LoDash
+## LoDash and Ramda
 
-**LoDash** is underscode-like library aiming to be all-in one toolbelt to manage
-data and utilities in different environments.
+No! **LoDash** No! **Ramda**. Use pure JS as much as possible.
 
 ## Moment
 
