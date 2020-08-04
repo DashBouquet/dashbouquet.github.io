@@ -144,3 +144,7 @@ No! **LoDash** No! **Ramda**. Use pure JS as much as possible.
 ## Moment
 
 Moment is a date-operations library. It's replaced with `date-fns`
+
+# Helpful Sources
+
+- [Learning React. O'Reilly](https://drive.google.com/file/d/129d5xERO0heJ7eSqUCkIXHse1_Y572qW/view?usp=sharing)
