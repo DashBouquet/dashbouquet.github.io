@@ -7,9 +7,7 @@ JAVASCRIPT/TYPESCRIPT LIFESTYLE
  * Do not commit logs in code
  * Keep your functions pure. Again. KEEP YOUR FUNCTIONS PURE. JUST KEEP IT PURE
  * Use `connect`/`compose` to dispatch your actions
- * Use `recompose` to fill your components with logic
  * Use `redux-saga` to manage side effects
- * Use `ramda` as swiss army knife for data processing
  * Use `styled-components` to style things
  * Keep calm and stay awesome :)
  * Cover your business logic with unit tests
