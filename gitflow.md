@@ -1,4 +1,4 @@
-<div align="center">
+<div>
     <a href="https://dashbouquet.com">
         <img src="assets/dashbouquet-logo.svg" alt="Dashbouquet" width="120"/>
     </a>
