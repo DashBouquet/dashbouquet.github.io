@@ -20,7 +20,6 @@
 | **`bugfix/<task_id>-<short-description>`** | - **TODO**s should generally not appear in committed code. If that is completely unavoidable then create a GitHub issue to track resolving the TODO. If it is a hack, use HACKHACK instead (for easier searchability); |
 | For bugfixes. | - don't leave out commented code or `console.log` statements; |
 | **`release/<sprint_number>.<dd-mm-yyyy>.<version_number>`** | - `<short-descripton>` should explain what was done in commit; |
-| When you’re about to package a new release, you create a release branch from the development branch. You can commit to it during your preparation for a release, and when it’s ready to be deployed, you merge it into both the development branch and the master branch (to indicate that the release has been deployed). | - test code and require reviews (after finishing of feature `pull request` should be created). 
- |
+| When you’re about to package a new release, you create a release branch from the development branch. You can commit to it during your preparation for a release, and when it’s ready to be deployed, you merge it into both the development branch and the master branch (to indicate that the release has been deployed). | - test code and require reviews (after finishing of feature `pull request` should be created).
 
 
