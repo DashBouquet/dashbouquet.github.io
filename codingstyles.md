@@ -23,10 +23,10 @@ JAVASCRIPT/TYPESCRIPT LIFESTYLE
  * Put task card into `Fixed` status
  * Move to #1
 
-#JS
+# JS
 
  * [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
 
-#TS
+# TS
 
  * [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
